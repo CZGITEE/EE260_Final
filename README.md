@@ -1,4 +1,4 @@
-![image](https://github.com/CZGITEE/EE260_Final/assets/121638425/448cf196-f96f-40c7-aa4e-af5302c88ad5)# EE260_Final
+# EE260_Final
 EE260 Final Project - CARLA-Based Sensor Fusion for Improved Trajectory Mapping
 
 This project integrates camera and LiDAR data for Simultaneous Localization and Mapping (SLAM) in AV using the CARLA simulator
