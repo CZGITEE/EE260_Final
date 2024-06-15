@@ -32,19 +32,21 @@ Once the sensors are operating correctly, use the "ExportData" tool to export se
 The "FinalProj_Toolset_PostProcess.ipynb" file is designed to process the RGB camera and LiDAR data. The RGB camera data and LiDAR data are used to create a sequential visual representation of the vehicle over time. Additionally, the RGB camera data is used to identify keypoint matches, which are then applied in visual odometry to estimate the vehicle's trajectory.
  
  <img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/693c8176-2408-4244-96a7-4411a5a5ba05" width="400">
-
+  -  
  <img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/ea0e9e89-83bb-4b82-8b4e-6836f5c47be1" width="600">
 
-RBG camera and LiDAR represenations of the ego car performaing a left turn.
+*RBG camera and LiDAR represenations of the ego car performaing a left turn.*
 
  <img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/ec21830a-7e96-4ee6-b34f-f93289ec0e8a" width="400">
 
-Trajectory estimate of ego vehicle driving straight for a duration, making a left turn, and then continuing to drive striaght
+*Plotted trajectory estimate of ego vehicle driving straight for a duration, making a left turn, and then continuing to drive striaght.*
 
+### Step 4: SLAM Fusion
+The "FinalProj_Toolset_FusionSLAM.ipynb" file is designed to integrate the visual odometry data from the RGB camera with the 3D point cloud data from the LiDAR. This fusion process enhances the accuracy of the vehicle's localization and mapping capabilities. This fusion can be explored further for precise trajectory mapping and improved navigation within the simulated environment. The image below demonstrates the vehicle's trajectory combined with the point cloud map. 
 
+ <img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/520411d3-f026-4ae2-8c3c-0c0ae932135a" width="600">
 
-
-
+*Trajectory infused with point cloud map showcasing the SLAM implementation.*
 
 
 
