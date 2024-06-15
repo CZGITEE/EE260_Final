@@ -12,4 +12,4 @@ Tools and Technologies:
 CARLA Simulator for data generation
 OpenCV, Open3D 
 
-<img src="![image](https://github.com/CZGITEE/EE260_Final/assets/121638425/693c8176-2408-4244-96a7-4411a5a5ba05)" width="800" />
+![image](https://github.com/CZGITEE/EE260_Final/assets/121638425/693c8176-2408-4244-96a7-4411a5a5ba05)
