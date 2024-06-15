@@ -45,9 +45,34 @@ The "FinalProj_Toolset_PostProcess.ipynb" file is designed to process the RGB ca
 The "FinalProj_Toolset_FusionSLAM.ipynb" file is designed to integrate the visual odometry data from the RGB camera with the 3D point cloud data from the LiDAR. This fusion process enhances the accuracy of the vehicle's localization and mapping capabilities. This fusion can be explored further for precise trajectory mapping and improved navigation within the simulated environment. The image below demonstrates the vehicle's trajectory combined with the point cloud map. 
 
  <img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/520411d3-f026-4ae2-8c3c-0c0ae932135a" width="600">
-
+ 
 *Trajectory infused with point cloud map showcasing the SLAM implementation.*
 
+<img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/b78ff755-8b78-4dbc-a7a8-f3edf2c413d7" width="600">
+
+*Fused view  with red arrow highlighting the pedestrian and major surrounding buildings through route.*
+
+### Conclusive Overview:
+ - Generate data after running the CARLA simulator.
+ - Export sensor data to disk 
+ - Camera data goes to OpenCV to detect and match keypoints between frames
+ - Keypoint matches are used through odometry to estimate trajectory 
+ - LiDAR data goes to Open3D to create a 3D point cloud of environment
+ - 3D point cloud visualized to analyze the spatial layout 
+ - Combine the estimated trajectory with the point cloud to perform SLAM
+ - SLAM provides a comprehensive view of the vehicle's path and its environment
+
+### File Descriptions:
+ - FinalProj_Main.ipynb
+ - FinalProj_Toolset_ExportData.ipynb
+ - FinalProj_Toolset_PostProcess.ipynb
+ - FinalProj_Toolset_FusionSLAM.ipynb
+   
+### Additional Files
+ - FinalProj_Main.ipynb
+ - FinalProj_Toolset_ExportData.ipynb
+ - FinalProj_Toolset_PostProcess.ipynb
+ - FinalProj_Toolset_FusionSLAM.ipynb
 
 
 
