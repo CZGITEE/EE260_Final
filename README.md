@@ -23,6 +23,6 @@ NOTE: As an alternative to a fresh install, you can run the "FinalProj_Main.ipyn
 <img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/589db968-4ae2-4ee6-bdf1-1604cafaa912" width="600">
 
 ### Step 2:
-You may  
+The "FinalProj_Toolset_ExportData.ipynb" file is part of this projects toolset to export camera and LiDAR data for processing. 
 
 <img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/693c8176-2408-4244-96a7-4411a5a5ba05" width="600">
