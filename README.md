@@ -1,4 +1,5 @@
-## EE260 Final Project - CARLA-Based Sensor Fusion for Improved Trajectory Mapping
+## CARLA-Based Sensor Fusion for Improved Trajectory Mapping
+### EE260 Final Project
 
 Introduction: 
 - This project integrates camera and LiDAR data for Simultaneous Localization and Mapping (SLAM) in AV using the CARLA simulator.
@@ -15,7 +16,7 @@ Tools and Technologies:
 
 
 ### Step 1: Installation
-Familiarization with CARLA is crucial. We recommned the following linked tutorials provided in class. These tutorials aid in the installation of CARLA and offer an introduction to implementing the sensors. 
+Familiarization with CARLA is crucial. We recommend the following linked tutorials provided in class. These tutorials aid in the installation of CARLA and offer an introduction to implementing the sensors. 
 
 NOTE: As an alternative to a fresh install, you may run the "FinalProj_Main.ipynb" notebook to launch the CARLA simulated environment. However, this is not recommended. Ensure that all code dependencies are satisfied.   
 
@@ -37,11 +38,11 @@ The "FinalProj_Toolset_PostProcess.ipynb" notebook is designed to process the RG
   -  
  <img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/ea0e9e89-83bb-4b82-8b4e-6836f5c47be1" width="600">
 
-*RBG camera and LiDAR represenations of the ego car performaing a left turn.*
+*RGB camera and LiDAR represenations of the ego car performing a left turn.*
 
  <img src="https://github.com/CZGITEE/EE260_Final/assets/121638425/ec21830a-7e96-4ee6-b34f-f93289ec0e8a" width="400">
 
-*Plotted trajectory estimate of ego vehicle driving straight for a duration, making a left turn, and then continuing to drive striaght.*
+*Plotted trajectory estimate of ego vehicle driving straight for a duration, making a left turn, and then continuing to drive straight.*
 
 ### Step 4: SLAM Fusion
 The "FinalProj_Toolset_FusionSLAM.ipynb" notebook is designed to integrate the visual odometry data from the RGB camera with the 3D point cloud data from the LiDAR. This fusion process enhances the accuracy of the vehicle's localization and mapping capabilities. This fusion can be explored further for precise trajectory mapping and improved navigation within the simulated environment. The image below demonstrates the vehicle's trajectory combined with the point cloud map. 
@@ -54,15 +55,15 @@ The "FinalProj_Toolset_FusionSLAM.ipynb" notebook is designed to integrate the v
 
 *Fused view  with red arrow highlighting the pedestrian and major surrounding buildings through route.*
 
-### Conclusive Overview:
- - Generate data after running the CARLA simulator.
- - Export sensor data to disk 
- - Camera data goes to OpenCV to detect and match keypoints between frames
- - Keypoint matches are used through odometry to estimate trajectory 
- - LiDAR data goes to Open3D to create a 3D point cloud of environment
- - 3D point cloud visualized to analyze the spatial layout 
- - Combine the estimated trajectory with the point cloud to perform SLAM
- - SLAM provides a comprehensive view of the vehicle's path and its environment
+### Summary:
+ - Generate data using the CARLA simulator
+ - Export sensor data to disk
+ - Process camera data with OpenCV to detect and match keypoints between frames
+ - Use keypoint matches for odometry to estimate the vehicle's trajectory
+ - Process LiDAR data with Open3D to create a 3D point cloud of the environment
+ - Visualize the 3D point cloud to analyze the spatial layout
+ - Integrate the estimated trajectory with the point cloud to perform SLAM
+ - Use SLAM to provide a comprehensive view of the vehicle's path and its environment
 
 ### Notebook Descriptions:
  - FinalProj_Main.ipynb
@@ -74,7 +75,7 @@ The "FinalProj_Toolset_FusionSLAM.ipynb" notebook is designed to integrate the v
  - FinalProj_Toolset_FusionSLAM.ipynb
    - Integrate the estimated trajectory with the LiDAR 3D point cloud data to perform SLAM
    
-### Additional Notebook
+### Additional Notebooks:
  - FinalProj_Extra_Toolset_ConnectivityCheck.ipynb
    - Notebook to test and verify connectivity  
  - FinalProj_Extra_Toolset_RemoveAll.ipynb
